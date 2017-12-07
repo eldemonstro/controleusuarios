@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="235dp">
+
+            <ImageView
+                android:id="@+id/formulario_foto"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@android:color/holo_blue_dark"
+                android:src="@drawable/ic_launcher_foreground" />
+
+            <Button
+                android:id="@+id/formulario_foto_button"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignBottom="@+id/formulario_foto"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="18dp"
+                android:background="@android:drawable/ic_menu_camera"
+                android:backgroundTint="@color/colorPrimary"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nome"
+            android:hint="Nome"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/telefone"
+            android:inputType="phone"
+            android:hint="Telefone"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/endereco"
+            android:hint="Endereco"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/site"
+            android:hint="Site"
+            android:inputType="textWebEditText"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/id"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+</ScrollView>
